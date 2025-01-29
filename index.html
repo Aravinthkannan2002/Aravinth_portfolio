@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio - Aravinth</title>
+
+  <!-- bootstrap css cdn link  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- bootstrap icon cdn link  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+  <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- jquery cdn link  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- navbar starts -->
+  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="bi bi-menu-button-fill"></i>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial">Testimonials</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <!-- <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button> -->
+    </div>
+  </nav>
+  <!-- navbar ends here -->
+
+  <!-- home section starts  -->
+  <section class="home pt-5 pb-5" id="home">
+    <div class="row justify-content-evenly align-items-center">
+      <!-- First div with some margin -->
+      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+        <h2 style="color: #3f396d">
+          Hello! I Am <br /><span class="c-orange">Aravinth Kannan</span>
+        </h2>
+        <p class="text-muted">
+          I'm a Mobile Application, Web Developer, and UI/UX Designer with 1 year of experience, specializing in
+          creating fully responsive websites and mobile apps, including backend integration.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center justify-content-md-start mt-3">
+          <a href="mailto:aravindkannan4614@gmail.com" target="_blank" class="c-btn h-btn py-3 px-5 rounded-pill ms-3 mt-3"
+            style="text-decoration: none;">
+            Hire Me
+          </a>
+          <a href="https://github.com/Aravinthkannan2002" target="_blank"
+            class="c-btn h-btn py-3 px-5 rounded-pill ms-3 mt-3" style="text-decoration: none;">
+            See My Work
+          </a>
+        </div>
+      </div>
+      <!-- Add margin to the second div for spacing -->
+      <div class="col-10 col-md-4 d-none d-md-block mt-4 mt-md-0">
+        <img src="images/banner.png" class="img-fluid" alt="" />
+      </div>
+    </div>
+  </section>
+  <!-- home section ends here -->
+
+  <!-- expertise section starts -->
+  <section class="expertise mt-5" id="service">
+    <div class="heading text-center">
+      <small>My Expertise</small>
+      <h3>
+        Provide Wide Range of <br />
+        Digital Services
+      </h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-10 col-md-4" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Application Development</h4>
+            <p class="text-muted">
+              Crafting innovative, user-friendly, and feature-rich applications to meet your goals.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>Web Development</h4>
+            <p class="text-muted">
+              Designing responsive, modern, and dynamic websites for your business growth.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4 col-10" data-aos="fade-up">
+        <div class="service-card">
+          <div class="img">
+            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="" />
+          </div>
+          <div class="content mt-3">
+            <h4>UI/UX Design</h4>
+            <p class="text-muted">
+              Creating intuitive and visually appealing designs to enhance user experiences.
+            </p>
+            <a href="" class="link">Read More</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- expertise section ends here -->
+
+  <!-- skill section starts -->
+  <section class="skill mt-5 py-5" id="about">
+    <div class="row justify-content-evenly">
+      <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+        <div class="row justify-content-evenly">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress html-css">
+                <span class="progress-value html-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">HTML,CSS & JavaScript</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress javascript">
+                <span class="progress-value javascript-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">Flutter</span>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4">
+          <div class="col-10 col-md-6">
+            <div class="progress-card ms-3 ms-md-0">
+              <div class="circular-progress php">
+                <span class="progress-value php-progress">0%</span>
+              </div>
+              <br />
+              <span class="text">UI UX</span>
+            </div>
+          </div>
+          <div class="col-10 col-md-6 mt-4 mt-md-0">
+            <div class="progress-card ms-3  ms-md-0">
+              <div class="circular-progress reactjs">
+                <span class="progress-value reactjs-progress">0%</span>
+              </div>
+              <br>
+              <span class="text">Dart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+        <div class="heading mt-5 mt-md-3">
+          <small>My Skills</small>
+          <h3>Crafting Beautiful & Unique Digital Experiences</h3>
+          <p class="text-muted">
+            I specialize in creating seamless and visually captivating digital solutions that deliver exceptional user
+            experiences.
+          </p>
+          <p class="text-muted">
+            With a focus on innovation and quality, I design and develop experiences that stand out and engage users
+            effectively.
+          </p>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            <a href="Aravinth_resume.pdf" download="AravinthResume" style="text-decoration: none; color: #fff;">
+              Download CV
+            </a>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- skill section end here -->
+
+  <!-- portfolio section starts here -->
+  <section class="portfolio" id="portfolio">
+    <div class="heading text-center pt-5">
+      <small>Creative Work</small>
+      <h3>Check My Portfolio</h3>
+    </div>
+
+    <div id="myBtnContainer" class="text-center mt-4">
+      <!-- here we will create custom attribute using data- for filtering -->
+      <button class="filter-item" data-filter="all">All</button>
+      <button class="filter-item" data-filter="game">Game</button>
+      <button class="filter-item" data-filter="webapp">Web App</button>
+      <button class="filter-item" data-filter="website">Mobile App</button>
+      <!-- <button class="filter-item" data-filter="brand">Brand</button> -->
+    </div>
+    <div class="portfolio-body">
+      <div class="row justify-content-evenly px-4">
+        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/LOGIN SIGNUP 1.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">LOGIN and SIGNUP</h4>
+              <span class="badge bg-secondary badge-pill">Dart</span>
+              <span class="badge bg-secondary badge-pill">Flutter</span>
+              <span class="badge bg-secondary badge-pill mb-2">MobileApp</span><br />
+              <a href="#" class="link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/WHATSAPP 1.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">WhatsApp Clone</h4>
+              <span class="badge bg-secondary badge-pill">Dart</span>
+              <span class="badge bg-secondary badge-pill">Flutter</span>
+              <span class="badge bg-secondary badge-pill mb-2">MobileApp</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/WEBui 1.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Frontend Using bootstrap</h4>
+              <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+              <span class="badge bg-secondary badge-pill">JavaScript</span>
+              <span class="badge bg-secondary badge-pill mb-2">bootstrap</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-evenly mt-4 px-4">
+        <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/quizapp 1.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Quiz App</h4>
+              <span class="badge bg-secondary badge-pill">Dart</span>
+              <span class="badge bg-secondary badge-pill">Flutter</span>
+              <span class="badge bg-secondary badge-pill mb-2">MobileApp</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/tic 1.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">TicTacToe Game</h4>
+              <span class="badge bg-secondary badge-pill">Dart</span>
+              <span class="badge bg-secondary badge-pill">Flutter</span>
+              <span class="badge bg-secondary badge-pill mb-2">Game</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+          <div class="card">
+            <img src="images/onboading.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h4 class="card-title">Onboarding screens</h4>
+              <span class="badge bg-secondary badge-pill">Dart</span>
+              <span class="badge bg-secondary badge-pill">Flutter</span>
+              <span class="badge bg-secondary badge-pill mb-2">MobileApp</span><br />
+              <a href="#" class="read-more-btn link">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- portfolio section ends here -->
+
+  <!-- testimonial section starts  -->
+  <section class="testimonial mt-5 pt-5" id="testimonial">
+    <div class="row justify-content-evenly">
+      <div class="col-md-4 col-10" data-aos="slide-right">
+        <img src="images/tastimonials-img.png" class="img-fluid" alt="" />
+      </div>
+      <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
+        <div class="heading">
+          <small>Testimonials</small>
+          <h3>Happy Clients Feedback</h3>
+          <!-- here we will use carousel element from bootstrap -->
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      "Aravinth is a skilled Flutter developer who builds smooth and efficient apps.
+                      His passion for mobile development and problem-solving is evident in his work."
+                    </p>
+                    <h4>Ragu pathi</h4>
+                    <small class="fs-6 text-muted">CEO of Roriri Software Solutions</small>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      "Aravinth is a dedicated Flutter developer with a keen eye for UI/UX.
+                      He transforms ideas into functional, elegant apps with great efficiency.
+                      His focus on performance and user experience sets him apart."
+                    </p>
+                    <h4>Antony</h4>
+                    <small class="fs-6 text-muted">UI&UX Designer of Roriri Software Solutions</small>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row justify-content-evenly">
+                  <div class="col-2 text-center">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <div class="col-10">
+                    <p class="text-muted">
+                      "Aravinth is a dedicated and hardworking Flutter developer.
+                      His commitment to delivering high-quality apps with seamless performance
+                      showcases his passion for excellence in mobile development."
+                    </p>
+                    <h4>Pechimuthu</h4>
+                    <small class="fs-6 text-muted">Project Manager of Roriri Software Solutions</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="nextprev-btn rounded-pill prev-btn" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <i class="bi bi-arrow-left-circle-fill prev"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="nextprev-btn rounded-pill next-btn" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <i class="bi bi-arrow-right-circle-fill next"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial ends here -->
+
+  <!-- blog section starts -->
+  <section class="blog mt-5 pb-5" id="blog">
+    <div class="heading text-center pt-5">
+      <small>Latest News</small>
+      <h3>Blog & Articles</h3>
+    </div>
+    <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+      <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+        <div class="card">
+          <img src="images/WHATSAPP 1.png" class="card-img-top rounded-4" alt="..." />
+          <div class="card-body px-4">
+            <small>By Aravinth</small><span class="ms-3">Jan 10, 2024</span>
+            <h4 class="card-title">
+              <a href="">Building a WhatsApp Clone in Flutter</a>
+            </h4>
+            <p class="text-muted">
+              Explore how to develop a fully functional WhatsApp clone using Flutter and GetX for state management.
+            </p>
+            <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+        <div class="card">
+          <img src="images/CHATBOT 1.png" class="card-img-top rounded-4" alt="..." />
+          <div class="card-body px-4">
+            <small>By Aravinth</small><span class="ms-3">July 02, 2025</span>
+            <h4 class="card-title">
+              <a href="">Building an AI Chatbot with Gemini API</a>
+            </h4>
+            <p class="text-muted">
+              Learn how to integrate the Gemini API into your Flutter app to build an intelligent chatbot with real-time
+              responses.
+            </p>
+            <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+        <div class="card">
+          <img src="images/ECOMMERCE 1.png" class="card-img-top rounded-4" alt="..." />
+          <div class="card-body px-4">
+            <small>By Aravinth</small><span class="ms-3">Jan 10, 2025</span>
+            <h4 class="card-title">
+              <a href="">E-Commerce Website with API </a>
+            </h4>
+            <p class="text-muted">
+              Discover how to build a scalable e-commerce platform with seamless API  for payments, products,
+              and user authentication.
+            </p>
+            <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- here we will make modals if Read more link is clicked the modal will popup -->
+      <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i
+                class="bi bi-x-circle-fill"></i></button>
+
+                <div class="modal-body px-4">
+                  <div class="img">
+                    <img src="images/WHATSAPP 1.png" class="img-fluid" alt="WhatsApp Clone">
+                  </div>
+                  <div class="content mt-3">
+                    <small>By Aravinth</small><span class="text-muted ms-2">Jan 29, 2025</span>
+                    <h4 class="card-title mt-3">Creating a WhatsApp Clone in Flutter</h4>
+                    <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <a href="https://github.com/Aravinthkannan2002" target="_blank">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      </button>
+                      <button href="" class="rounded-pill gmail">
+                        <a href="mailto:aravindkannan4614@gmail.com" target="_blank">
+                          <i class="bi bi-envelope-fill"></i>
+                        </a>
+                      </button>
+                      <button href="" class="rounded-pill linkedin">
+                        <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        </a>
+                      </button>
+                    </div>
+                    <p class="text-muted mt-3">In building the WhatsApp clone in Flutter, I focused on key features like real-time chat, media sharing, and a sleek, user-friendly design. I used Flutter widgets such as <code>ListView</code> for the chat list, <code>TextField</code> for the input area, and custom widgets for displaying images and videos. For the social share buttons, I integrated <code>IconButton</code> with customized actions, mimicking the WhatsApp interface. The challenge was ensuring smooth real-time messaging functionality and optimizing media loading for an optimal experience across devices.</p>
+                  </div>
+                </div>                
+            <!-- <div class="heading px-2">
+              <h3 class="fs-3 ms-3">Leave A Comment</h3>
+            </div>
+            <div class="contact-form ms-3 mt-3 pb-4 px-2">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile No." />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                  rows="5"></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                Submit
+              </button>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i
+                class="bi bi-x-circle-fill"></i></button>
+
+                <div class="modal-body px-4">
+                  <div class="img">
+                    <img src="images/CHATBOT 1.png" class="img-fluid" alt="Chatbot Image">
+                  </div>
+                  <div class="content mt-3">
+                    <small>By Aravinth</small><span class="text-muted ms-2 ms-md-0">January 29, 2025</span>
+                    <h4 class="card-title mt-3">Building an AI Chatbot with GetX and Gemini API</h4>
+                    <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <a href="https://github.com/Aravinthkannan2002" target="_blank">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      </button>
+                      <button href="" class="rounded-pill gmail">
+                        <a href="mailto:aravindkannan4614@gmail.com" target="_blank">
+                          <i class="bi bi-envelope-fill"></i>
+                        </a>
+                      </button>
+                      <button href="" class="rounded-pill linkedin">
+                        <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        </a>
+                      </button>
+                    </div>
+                    <p class="text-muted mt-3">In this project, I developed a powerful AI chatbot using Flutter's state management tool GetX. The chatbot integrates with the Gemini API for advanced conversational capabilities. By leveraging GetX for state management, I was able to ensure smooth interactions and efficient data handling within the app. This chatbot is capable of understanding and responding to user inputs, creating personalized experiences for users. Explore the detailed approach and integration steps for building scalable and efficient AI chatbots in Flutter.</p>
+                  </div>
+                </div>                
+            <!-- <div class="heading px-2">
+              <h3 class="fs-3 ms-3">Leave A Comment</h3>
+            </div>
+            <div class="contact-form ms-3 mt-3 pb-4 px-2">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Mobile No." />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message"
+                  rows="5"></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                Submit
+              </button>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i
+                class="bi bi-x-circle-fill"></i></button>
+
+                <div class="modal-body px-4">
+                  <div class="img">
+                    <img src="images/ECOMMERCE 1.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="content mt-3">
+                    <small>By Aravinth</small><span class="text-muted ms-2 ms-md-0">January 29, 2025</span>
+                    <h4 class="card-title mt-3">Building My E-Commerce App with Flutter</h4>
+                    <div class="social-links mt-4">
+                      <button href="" class="rounded-pill dribble">
+                        <a href="https://github.com/Aravinthkannan2002" target="_blank">
+                        <i class="bi bi-github"></i>
+                      </a>
+                      </button>
+                      <button href="" class="rounded-pill gmail">
+                        <a href="mailto:aravindkannan4614@gmail.com" target="_blank">
+                          <i class="bi bi-envelope-fill"></i>
+                        </a>
+                      </button>
+                      <button href="" class="rounded-pill linkedin">
+                        <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                        </a>
+                      </button>
+                    </div>
+                    <p class="text-muted mt-3">In this project, I developed a fully functional e-commerce app using Flutter. The app offers a seamless shopping experience, allowing users to browse products, add them to the cart, and proceed to checkout. I focused on implementing smooth navigation, secure payment integration, and an easy-to-use interface. The app uses GetX for state management, ensuring efficient data handling and real-time updates across the app. The goal was to create a fast, intuitive platform that provides users with an engaging shopping experience.</p>
+                  </div>
+                </div>                
+            <!-- <div class="heading px-2">
+              <h3 class="fs-3 ms-3">Leave A Comment</h3>
+            </div>
+            <div class="contact-form ms-3 mt-3 pb-4 px-2">
+              <div class="mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Name" />
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="E-mail" />
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" id="mobile_number" placeholder="Mobile No." />
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="message" placeholder="Message" rows="5"></textarea>
+              </div>
+              <button class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                Submit
+              </button>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog section ends here -->
+
+  <!-- contact section starts -->
+  <section class="contact py-5" id="contact">
+    <div class="heading text-center">
+      <small>Get in Touch</small>
+      <h3>Any Questions? Feel Free to Contact</h3>
+    </div>
+    <div class="row justify-content-evenly mt-5">
+      <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-geo-alt-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>No. 45, Mount Road, Chennai - 600002, Tamil Nadu, India</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>+91 7010465822</p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div class="col-11">
+            <p>
+              <a href="mailto:aravindkannan4614@gmail.com" style="text-decoration: none; color: inherit;">
+                aravindkannan4614@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-1">
+            <i class="bi bi-linkedin"></i>
+          </div>
+          <div class="col-11">
+            <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank" rel="noopener noreferrer">
+              <p>www.linkedin.com/in/arvindhkannan</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+        <div class="contact-form">
+          <form id="contact-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="phone" name="phone" placeholder="Mobile No." required />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5"
+                required></textarea>
+            </div>
+            <button type="submit" class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" id="form-submit">
+              Submit
+            </button>
+          </form>
+          <div id="status"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section ends here -->
+
+  <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+  <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- footer section starts  -->
+  <footer class="text-center text-muted py-4">
+    <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+    <div class="link-group mt-5" data-aos="fade-up">
+      <a href="#home">Home</a>
+      <div class="vr"></div>
+      <a href="#about">About</a>
+      <div class="vr"></div>
+      <a href="#service">Service</a>
+      <div class="vr"></div>
+      <a href="#portfolio">Portfolio</a>
+      <div class="vr"></div>
+      <a href="#blog">Blog</a>
+      <div class="vr"></div>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="social-links mt-5" data-aos="fade-up">
+      <button href="" class="rounded-pill linkedin">
+        <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank">
+        <i class="bi bi-linkedin"></i>
+        </a>
+      </button>
+      <button href="" class="rounded-pill gmail">
+        <a href="mailto:aravindkannan4614@gmail.com" target="_blank">
+          <i class="bi bi-envelope-fill"></i>
+        </a>
+      </button>
+      <button href="" class="rounded-pill github">
+        <a href="https://github.com/Aravinthkannan2002" target="_blank">
+        <i class="bi bi-github"></i>
+        </a>
+      </button>
+    </div>
+    <hr class="text-muted my-4" />
+
+    <p>Copyright 2025 Aravinth's Portfolio | All Rights Reserved.</p>
+  </footer>
+  <!-- footer section ends here -->
+
+  <!-- bootstrap javascript cdn link  -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS library javascript link  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    // initializing AOS library
+    AOS.init({
+      duration: 1000,
+      offset: 50,
+    });
+  </script>
+  <!-- custom js file linking -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
