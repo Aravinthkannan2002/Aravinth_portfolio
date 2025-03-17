@@ -10,8 +10,6 @@
 
   A Responsive Portfolio Website built using HTML, CSS, JavaScript, and Bootstrap.
 
-  <a href="https://aravinthkannan2002.github.io/Aravinth_portfolio/"><strong>➥ Live Demo</strong></a>
-
 </div>
 
 <br />
@@ -20,13 +18,11 @@
 
 #### 🎥 Video Preview
 
-![Portfolio Video](https://github.com/Aravinthkannan2002/Aravinth_portfolio/assets/video-preview.mp4)
+
+https://github.com/user-attachments/assets/d0610f07-0674-4490-b266-b58c287eef62
 
 #### 🖼 Screenshots
-
-![Portfolio Screenshot 1](https://github.com/Aravinthkannan2002/Aravinth_portfolio/assets/screenshot1.png)
-![Portfolio Screenshot 2](https://github.com/Aravinthkannan2002/Aravinth_portfolio/assets/screenshot2.png)
-
+![Aravinth_portfolio_Thumbnail](https://github.com/user-attachments/assets/7d8aa0a7-55bf-4070-a98c-7b51cd33757a)
 ### 🛠 Prerequisites
 
 Before running this project, ensure you have:
