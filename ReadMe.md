@@ -1,5 +1,5 @@
 <div align="center">
-  
+
   ![GitHub repo size](https://img.shields.io/github/repo-size/Aravinthkannan2002/Aravinth_portfolio)
   ![GitHub stars](https://img.shields.io/github/stars/Aravinthkannan2002/Aravinth_portfolio?style=social)
   ![GitHub forks](https://img.shields.io/github/forks/Aravinthkannan2002/Aravinth_portfolio?style=social)
@@ -8,7 +8,7 @@
 
   <h2 align="center">Aravinth Kannan - Portfolio</h2>
 
-  A Responsive Portfolio Website built using HTML, CSS, JavaScript, and Bootstrap.
+  A Responsive Portfolio Website built using HTML, CSS, JavaScript, and Bootstrap — featuring an AI chatbot, custom cursor animation, and modular clean architecture.
 
 </div>
 
@@ -23,47 +23,57 @@ https://github.com/user-attachments/assets/d0610f07-0674-4490-b266-b58c287eef62
 
 #### 🖼 Screenshots
 ![Aravinth_portfolio_Thumbnail](https://github.com/user-attachments/assets/7d8aa0a7-55bf-4070-a98c-7b51cd33757a)
-### 🛠 Prerequisites
 
-Before running this project, ensure you have:
+### 📂 Project Structure
 
-* Basic knowledge of HTML, CSS, and JavaScript
-* Bootstrap 5 installed (CDN included below):
-```html
-<!-- Bootstrap 5 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+```
+Aravinth_portfolio/
+├── index.html                          Main HTML file
+├── .gitignore                          Git ignore rules
+├── ReadMe.md                           Documentation
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css                   Main styles + responsive breakpoints
+│   │   └── chatbot.css                 AI chatbot widget styles
+│   │
+│   ├── js/
+│   │   ├── main.js                     Cursor, typing, counters, skills, filter, navbar, EmailJS
+│   │   └── chatbot.js                  AI chatbot (Gemini + Groq multi-provider)
+│   │
+│   ├── images/
+│   │   ├── banner.png                  Hero banner
+│   │   ├── favicon.svg                 AK branded favicon
+│   │   ├── testimonials.png            Testimonial section image
+│   │   └── projects/                   Project screenshots (kebab-case)
+│   │
+│   └── documents/
+│       └── Aravinth_Kannan_Resume.pdf  Downloadable resume
+│
+└── _archive/                           Unused assets (git-ignored)
 ```
 
-* jQuery (CDN included below):
-```html
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-```
+### ✨ Features
 
-* Bootstrap Icons:
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
-```
+- Responsive design across all screen sizes (991px, 768px, 480px breakpoints)
+- Custom cursor animation on mouse move (disabled on mobile/touch)
+- AI chatbot powered by Google Gemini & Groq with daily quota limits
+- Typing animation, stats counter, and skill progress circles with IntersectionObserver
+- Portfolio filter with category tabs
+- Glassmorphism navbar with auto-close on mobile
+- Gen Z glow icons with scale + rotate hover effects
+- AOS scroll animations
+- Contact form via EmailJS
+- AK branded SVG favicon
 
-### ✨ AOS Animation Library
+### 🛠 Tech Stack
 
-To add animations:
-```html
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>AOS.init();</script>
-```
-
-### 📂 Features
-
-✔️ Responsive Navigation Bar
-✔️ Hero Section
-✔️ About Me Section
-✔️ Skills Section
-✔️ Portfolio Section
-✔️ Contact Section
-✔️ Fully Responsive Design
+- **HTML5** + **CSS3** + **JavaScript (ES6)**
+- **Bootstrap 5** (Grid, Navbar, Carousel, Modal)
+- **jQuery** (Portfolio filter)
+- **AOS** (Scroll animations)
+- **EmailJS** (Contact form)
+- **Google Gemini API** + **Groq API** (AI chatbot)
 
 ### 🔧 Run Locally
 
@@ -72,13 +82,14 @@ Clone the repository:
 git clone https://github.com/Aravinthkannan2002/Aravinth_portfolio.git
 ```
 
-Open the `index.html` file in your browser to view the portfolio.
+Open `index.html` in your browser — no build tools required.
 
 ### 📞 Contact
 
-Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/aravinth-kannan/) or reach out via email.
+- **Email:** aravindkannan4614@gmail.com
+- **LinkedIn:** [linkedin.com/in/arvindhkannan](https://www.linkedin.com/in/arvindhkannan)
+- **GitHub:** [github.com/Aravinthkannan2002](https://github.com/Aravinthkannan2002)
 
 ### 📜 License
 
 This project is **Free to Use** and does not contain any license.
-
