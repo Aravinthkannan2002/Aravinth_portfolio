@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio - Aravinth</title>
+  <title>Aravinth Kannan | Flutter Developer Portfolio</title>
+  <meta name="description" content="Aravinth Kannan - Mobile Application Developer with 2+ years of Flutter experience. Building high-performance cross-platform apps." />
 
   <!-- bootstrap css cdn link  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,15 +18,18 @@
   <!-- google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
 
   <!-- bootstrap icon cdn link  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
 
-  <!-- for adding animation to website we have use AOS library 
+  <!-- for adding animation to website we have use AOS library
     AOS Library css file cdn link -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <!-- preload hero image for instant display -->
+  <link rel="preload" href="images/banner.png" as="image" />
 
   <!-- jquery cdn link  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -33,16 +37,19 @@
 
 <body>
   <!-- navbar starts -->
-  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-    <div class="container-fluid px-5">
-      <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
-      <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+  <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid px-3 px-md-4 px-lg-5">
+      <a class="navbar-brand fw-bold fs-2" href="#home" style="color: #3f396d">
+        <span class="brand-gradient">AK</span> Portfolio
+      </a>
+      <button class="nav-menu d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="bi bi-menu-button-fill"></i>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#service">Service</a>
@@ -59,9 +66,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#blog">Blog</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
-      <!-- <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button> -->
+      <a href="#contact" class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-lg-block" style="text-decoration:none;">Contact</a>
     </div>
   </nav>
   <!-- navbar ends here -->
@@ -70,30 +80,58 @@
   <section class="home pt-5 pb-5" id="home">
     <div class="row justify-content-evenly align-items-center">
       <!-- First div with some margin -->
-      <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+      <div class="col-10 col-md-6 text-center text-md-start">
+        <small class="hero-badge">Available for Freelance Projects</small>
         <h2 style="color: #3f396d">
           Hello! I Am <br /><span class="c-orange">Aravinth Kannan</span>
         </h2>
+        <p class="typing-wrapper">
+          I'm a <span id="typed-text" class="typed-text"></span><span class="cursor">|</span>
+        </p>
         <p class="text-muted">
-          I'm a versatile Mobile & Web Developer and UI/UX Designer with 1+ years of experience crafting
-          high-performance, responsive apps and websites. I blend sleek design with solid backend integration to build
-          smart, scalable digital solutions.
+          Mobile Application Developer with 2+ years of Flutter experience. Shipped production apps with 50,000+ downloads
+          across Play Store & App Store. Proficient in Clean Architecture, state management (BLoC/GetX), Firebase, and
+          RESTful APIs. Passionate about building high-performance, user-centric mobile experiences at scale.
         </p>
 
         <div class="d-flex flex-wrap justify-content-center justify-content-md-start mt-3">
-          <a href="mailto:aravindkannan4614@gmail.com" target="_blank"
+          <a href="mailto:aravindkannan4614@gmail.com" target="_blank" rel="noopener noreferrer"
             class="c-btn h-btn py-3 px-5 rounded-pill ms-3 mt-3" style="text-decoration: none;">
-            Hire Me
+            <i class="bi bi-envelope-fill me-2"></i>Hire Me
           </a>
-          <a href="https://github.com/Aravinthkannan2002" target="_blank"
-            class="c-btn h-btn py-3 px-5 rounded-pill ms-3 mt-3" style="text-decoration: none;">
-            See My Work
+          <a href="https://github.com/Aravinthkannan2002" target="_blank" rel="noopener noreferrer"
+            class="c-btn h-btn-outline py-3 px-5 rounded-pill ms-3 mt-3" style="text-decoration: none;">
+            <i class="bi bi-github me-2"></i>See My Work
           </a>
         </div>
       </div>
       <!-- Add margin to the second div for spacing -->
       <div class="col-10 col-md-4 d-none d-md-block mt-4 mt-md-0">
-        <img src="images/banner.png" class="img-fluid" alt="" />
+        <img src="images/banner.png" class="img-fluid" alt="Aravinth Kannan - Flutter Developer" loading="eager" fetchpriority="high" />
+      </div>
+    </div>
+
+    <!-- Stats Counter Section -->
+    <div class="row justify-content-evenly mt-5 stats-section">
+      <div class="col-5 col-md-2 text-center stat-card" data-aos="fade-up" data-aos-delay="0">
+        <h2 class="stat-number" data-target="2">0</h2>
+        <span class="stat-suffix">+</span>
+        <p class="stat-label">Years Experience</p>
+      </div>
+      <div class="col-5 col-md-2 text-center stat-card" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="stat-number" data-target="4">0</h2>
+        <span class="stat-suffix">+</span>
+        <p class="stat-label">Live Apps</p>
+      </div>
+      <div class="col-5 col-md-2 text-center stat-card" data-aos="fade-up" data-aos-delay="200">
+        <h2 class="stat-number" data-target="50">0</h2>
+        <span class="stat-suffix">K+</span>
+        <p class="stat-label">Downloads</p>
+      </div>
+      <div class="col-5 col-md-2 text-center stat-card" data-aos="fade-up" data-aos-delay="300">
+        <h2 class="stat-number" data-target="35">0</h2>
+        <span class="stat-suffix">+</span>
+        <p class="stat-label">Projects</p>
       </div>
     </div>
   </section>
@@ -104,87 +142,76 @@
     <div class="heading text-center">
       <small>My Expertise</small>
       <h3>
-        Provide Wide Range of <br />
-        Digital Services
+        What I Bring to <br />
+        Your Product
       </h3>
     </div>
     <div class="row justify-content-evenly mt-5">
       <div class="col-10 col-md-4" data-aos="fade-up">
         <div class="service-card">
-          <div class="img">
-            <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="" />
+          <div class="service-icon glow-purple">
+            <i class="bi bi-rocket-takeoff-fill"></i>
           </div>
           <div class="content mt-3">
-            <h4>Application Development</h4>
+            <h4>Flutter App Development</h4>
             <p class="text-muted">
-              Crafting innovative, user-friendly, and feature-rich applications to meet your goals.
+              Building cross-platform Android & iOS apps with Flutter and Dart — from Clean Architecture to Play Store & App Store deployment.
             </p>
-            <!-- <a href="" class="link">Read More</a> -->
           </div>
-
         </div>
       </div>
       <div class="col-md-4 col-10" data-aos="fade-up">
         <div class="service-card">
-          <div class="img">
-            <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="" />
+          <div class="service-icon glow-blue">
+            <i class="bi bi-layers-fill"></i>
           </div>
           <div class="content mt-3">
-            <h4>Web Development</h4>
+            <h4>State Management</h4>
             <p class="text-muted">
-              Designing responsive, modern, and dynamic websites for your business growth.
+              Architecting scalable app state with BLoC and GetX — ensuring reactive UI, efficient data flow, and maintainable codebases.
             </p>
-            <!-- <a href="" class="link">Read More</a> -->
           </div>
-
         </div>
       </div>
       <div class="col-md-4 col-10" data-aos="fade-up">
         <div class="service-card">
-          <div class="img">
-            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="" />
+          <div class="service-icon glow-orange">
+            <i class="bi bi-lightning-charge-fill"></i>
           </div>
           <div class="content mt-3">
-            <h4>UI/UX Design</h4>
+            <h4>Firebase Integration</h4>
             <p class="text-muted">
-              Creating intuitive and visually appealing designs to enhance user experiences.
+              Implementing Authentication, Cloud Firestore, FCM push notifications, Dynamic Links, Realtime Database, and Analytics.
             </p>
-            <!-- <a href="" class="link">Read More</a> -->
           </div>
-
         </div>
       </div>
       <div class="col-md-4 col-10" data-aos="fade-up">
         <div class="service-card">
-          <div class="img">
-            <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="AI & Chatbot Integration" />
+          <div class="service-icon glow-green">
+            <i class="bi bi-broadcast-pin"></i>
           </div>
           <div class="content mt-3">
-            <h4>AI & Chatbot Integration</h4>
+            <h4>RESTful API Integration</h4>
             <p class="text-muted">
-              Integrate AI-powered chatbots for enhanced customer engagement using machine learning, voice search, and
-              predictive analytics.
+              Connecting apps to 20+ REST endpoints with DIO, token-based auth, JSON parsing, autocomplete search, and offline caching with Hive.
             </p>
-            <!-- <a href="" class="link">Read More</a> -->
           </div>
         </div>
       </div>
-
       <div class="col-md-4 col-10" data-aos="fade-up">
         <div class="service-card">
-          <div class="img">
-            <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="API Development & Integration" />
+          <div class="service-icon glow-pink">
+            <i class="bi bi-brush-fill"></i>
           </div>
           <div class="content mt-3">
-            <h4>API Development & Integration</h4>
+            <h4>UI & Responsive Design</h4>
             <p class="text-muted">
-              Building and integrating custom APIs to connect your applications seamlessly with third-party services.
+              Crafting pixel-perfect, responsive UIs with Material Design — optimized for all screen sizes across Android, iOS, and web.
             </p>
-            <!-- <a href="" class="link">Read More</a> -->
           </div>
         </div>
       </div>
-
     </div>
   </section>
   <!-- expertise section ends here -->
@@ -200,7 +227,7 @@
                 <span class="progress-value html-progress">0%</span>
               </div>
               <br />
-              <span class="text">HTML,CSS & JavaScript</span>
+              <span class="text">Flutter</span>
             </div>
           </div>
           <div class="col-10 col-md-6 mt-4 mt-md-0">
@@ -209,7 +236,7 @@
                 <span class="progress-value javascript-progress">0%</span>
               </div>
               <br />
-              <span class="text">Flutter</span>
+              <span class="text">Dart</span>
             </div>
           </div>
         </div>
@@ -220,7 +247,7 @@
                 <span class="progress-value php-progress">0%</span>
               </div>
               <br />
-              <span class="text">UI UX</span>
+              <span class="text">Firebase</span>
             </div>
           </div>
           <div class="col-10 col-md-6 mt-4 mt-md-0">
@@ -229,7 +256,7 @@
                 <span class="progress-value reactjs-progress">0%</span>
               </div>
               <br>
-              <span class="text">Dart</span>
+              <span class="text">BLoC & GetX</span>
             </div>
           </div>
         </div>
@@ -237,17 +264,17 @@
       <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
         <div class="heading mt-5 mt-md-3">
           <small>My Skills</small>
-          <h3>Crafting Beautiful & Unique Digital Experiences</h3>
+          <h3>Building High-Performance Mobile Experiences</h3>
           <p class="text-muted">
-            I specialize in creating seamless and visually captivating digital solutions that deliver exceptional user
-            experiences.
+            Proficient in Dart, Flutter, Clean Architecture, state management (BLoC/GetX), Firebase, and RESTful API
+            integration for cross-platform Android & iOS development.
           </p>
           <p class="text-muted">
-            With a focus on innovation and quality, I design and develop experiences that stand out and engage users
-            effectively.
+            Experienced with Git, CI/CD, SOLID principles, Play Store & App Store deployment, and tools like Hive,
+            DIO, and Firebase services including Auth, Firestore, FCM, and Dynamic Links.
           </p>
           <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-            <a href="Documents\Aravinth_Resume.pdf" download="AravinthResume"
+            <a href="Documents/Aravinth_Kannan_Resume.pdf" download="Aravinth_Kannan_Resume"
               style="text-decoration: none; color: #fff;">
               Download CV
             </a>
@@ -287,7 +314,7 @@
               <span class="badge bg-secondary badge-pill">Flutter</span>
               <span class="badge bg-secondary badge-pill mb-2">Firebase</span><br />
               <a href="https://github.com/Aravinthkannan2002?tab=repositories" class="read-more-btn link"
-                target="_blank">View Live Project</a>
+                target="_blank" rel="noopener noreferrer">View Live Project</a>
             </div>
           </div>
         </div>
@@ -300,7 +327,7 @@
               <span class="badge bg-secondary badge-pill">Dart</span>
               <span class="badge bg-secondary badge-pill mb-2">Java</span><br />
               <a href="https://play.google.com/store/apps/details?id=com.talentturbo.referral.android"
-                class="read-more-btn link" target="_blank">View Live Project</a>
+                class="read-more-btn link" target="_blank" rel="noopener noreferrer">View Live Project</a>
             </div>
           </div>
         </div>
@@ -313,7 +340,7 @@
               <span class="badge bg-secondary badge-pill">Dart</span>
               <span class="badge bg-secondary badge-pill mb-2">Java</span><br />
               <a href="https://play.google.com/store/search?q=Homiefix&c=apps" class="read-more-btn link"
-                target="_blank">View Live Project</a>
+                target="_blank" rel="noopener noreferrer">View Live Project</a>
             </div>
           </div>
         </div>
@@ -326,7 +353,7 @@
               <span class="badge bg-secondary badge-pill">Flutter</span>
               <span class="badge bg-secondary badge-pill mb-2">Firebase</span><br />
               <a href="https://play.google.com/store/apps/details?id=com.isteer.mvaahna&pcampaignid=web_share"
-                class="read-more-btn link" target="_blank">View Live Project</a>
+                class="read-more-btn link" target="_blank" rel="noopener noreferrer">View Live Project</a>
             </div>
           </div>
         </div>
@@ -339,7 +366,7 @@
               <span class="badge bg-secondary badge-pill">Flutter</span>
               <span class="badge bg-secondary badge-pill mb-2">Firebase</span><br />
               <a href="https://github.com/Aravinthkannan2002?tab=repositories" class="read-more-btn link"
-                target="_blank">View Project</a>
+                target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
           </div>
 
@@ -349,11 +376,11 @@
           <div class="card">
             <img src="images/bus_tracking.png" class="card-img-top" alt="..." />
             <div class="card-body text-center">
-              <h4 class="card-title">bus Tracking App</h4>
+              <h4 class="card-title">Bus Tracking App</h4>
               <span class="badge bg-secondary badge-pill">Dart</span>
               <span class="badge bg-secondary badge-pill">Flutter</span>
               <span class="badge bg-secondary badge-pill mb-2">supabase</span><br />
-              <a href="https://github.com/Aravinthkannan2002?tab=repositories" class="link" target="_blank">View
+              <a href="https://github.com/Aravinthkannan2002?tab=repositories" class="link" target="_blank" rel="noopener noreferrer">View
                 Project</a>
             </div>
           </div>
@@ -372,7 +399,7 @@
               <span class="badge bg-secondary badge-pill">Flutter</span>
               <span class="badge bg-secondary badge-pill mb-2">MobileApp</span><br />
               <a href="https://github.com/Aravinthkannan2002?tab=repositories" class="read-more-btn link"
-                target="_blank">View Project</a>
+                target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
           </div>
         </div>
@@ -385,7 +412,7 @@
               <span class="badge bg-secondary badge-pill">Flutter</span>
               <span class="badge bg-secondary badge-pill mb-2">Game</span><br />
               <a href="https://github.com/Aravinthkannan2002?tab=repositories" class="read-more-btn link"
-                target="_blank">View Project</a>
+                target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
           </div>
         </div>
@@ -399,7 +426,7 @@
               <span class="badge bg-secondary badge-pill">Flutter</span>
               <span class="badge bg-secondary badge-pill mb-2">widgets</span><br />
               <a href="https://github.com/Aravinthkannan2002?tab=repositories" class="read-more-btn link"
-                target="_blank">View Project</a>
+                target="_blank" rel="noopener noreferrer">View Project</a>
             </div>
           </div>
         </div>
@@ -417,7 +444,7 @@
         <div class="col-md-6 col-10 mt-5" data-aos="slide-left">
           <div class="heading">
             <small>Testimonials</small>
-            <h3>Happy Voices, Happy Stories</h3>
+            <h3>What People I've Worked With Say</h3>
             <!-- here we will use carousel element from bootstrap -->
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
@@ -428,10 +455,11 @@
                     </div>
                     <div class="col-10">
                       <p class="text-muted">
-                        "Aravinth is a skilled Flutter developer who builds smooth and efficient apps.
-                        His passion for mobile development and problem-solving is evident in his work."
+                        "Aravinth grew from an intern to one of our core developers in record time. He independently
+                        shipped production apps on both Play Store and App Store, handling everything from Clean
+                        Architecture to complex API integrations. A truly self-driven developer."
                       </p>
-                      <h4>Ragu pathi</h4>
+                      <h4>Ragu Pathi</h4>
                       <small class="fs-6 text-muted">CEO of Roriri Software Solutions</small>
                     </div>
                   </div>
@@ -443,15 +471,15 @@
                     </div>
                     <div class="col-10">
                       <p class="text-muted">
-                        "Aravinth is a skilled Flutter developer with a sharp eye for UI/UX, creating functional,
-                        elegant apps with a focus on performance and user experience."
+                        "Working with Aravinth on TalentTurbo was a great experience. He seamlessly integrated 20+
+                        backend APIs with token-based auth, built Firebase Dynamic Links for our referral system, and
+                        implemented push notifications flawlessly. His attention to detail and reliability made
+                        collaboration effortless."
                       </p>
-
                       <h4>Gayathri Jayakumar</h4>
                       <small class="fs-6 text-muted">Senior Backend Developer at TalentTurbo Technologies Pvt.
                         Ltd.</small>
                     </div>
-
                   </div>
                 </div>
                 <div class="carousel-item">
@@ -461,14 +489,31 @@
                     </div>
                     <div class="col-10">
                       <p class="text-muted">
-                        "Aravinth is a skilled and dedicated Flutter developer, committed to building high-quality apps
-                        with smooth performance and a focus on excellence."
+                        "Aravinth has a strong grasp of Flutter and cross-platform development. He built responsive
+                        UIs, connected mobile clients to RESTful backends, and contributed to apps that reached
+                        50,000+ downloads. His eagerness to learn and deliver quality work sets him apart."
                       </p>
                       <h4>Boopathy Ranjith</h4>
                       <small class="fs-6 text-muted">Senior Flutter Developer at Amshuhu Itech Solution Private
                         Limited</small>
                     </div>
-
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row justify-content-evenly">
+                    <div class="col-2 text-center">
+                      <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="col-10">
+                      <p class="text-muted">
+                        "Aravinth was one of the most dedicated trainees in our Flutter program. He quickly mastered
+                        widgets, layouts, navigation, state management, and REST API integration within the 3-month
+                        training. His curiosity and hands-on approach made him stand out — he was always building
+                        beyond what was taught."
+                      </p>
+                      <h4>Raj Krishna</h4>
+                      <small class="fs-6 text-muted">Trainer at Greens Technologys</small>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -492,20 +537,20 @@
     <!-- blog section starts -->
     <section class="blog mt-5 pb-5" id="blog">
       <div class="heading text-center pt-5">
-        <small>Latest News</small>
-        <h3>Blog & Articles</h3>
+        <small>Featured Work</small>
+        <h3>Projects & Contributions</h3>
       </div>
       <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
         <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
           <div class="card">
             <img src="images/WHATSAPP 1.png" class="card-img-top rounded-4" alt="..." />
             <div class="card-body px-4">
-              <small>By Aravinth</small><span class="ms-3">Jan 10, 2024</span>
+              <small>By Aravinth</small><span class="ms-3">Mar 2025</span>
               <h4 class="card-title">
-                <a href="">Building a WhatsApp Clone in Flutter</a>
+                <a href="https://github.com/Aravinthkannan2002/whatsapp_clone" target="_blank">WhatsApp Clone — Flutter & GetX</a>
               </h4>
               <p class="text-muted">
-                Explore how to develop a fully functional WhatsApp clone using Flutter and GetX for state management.
+                A full-featured WhatsApp clone built with Flutter and GetX state management, featuring real-time chat UI, media sharing, and responsive design.
               </p>
               <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read
                 More</a>
@@ -516,14 +561,12 @@
           <div class="card">
             <img src="images/CHATBOT 1.png" class="card-img-top rounded-4" alt="..." />
             <div class="card-body px-4">
-              <small>By Aravinth</small><span class="ms-3">July 02, 2025</span>
+              <small>By Aravinth</small><span class="ms-3">Jan 2026</span>
               <h4 class="card-title">
-                <a href="">Building an AI Chatbot with Gemini API</a>
+                <a href="https://github.com/Aravinthkannan2002/empty_view" target="_blank">Empty View — Flutter Package</a>
               </h4>
               <p class="text-muted">
-                Learn how to integrate the Gemini API into your Flutter app to build an intelligent chatbot with
-                real-time
-                responses.
+                A powerful Flutter package for displaying beautiful empty state views with animations, Lottie support, shimmer loading, dark mode, and accessibility features.
               </p>
               <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal2">Read
                 More</a>
@@ -534,13 +577,12 @@
           <div class="card">
             <img src="images/ECOMMERCE 1.png" class="card-img-top rounded-4" alt="..." />
             <div class="card-body px-4">
-              <small>By Aravinth</small><span class="ms-3">Jan 10, 2025</span>
+              <small>By Aravinth</small><span class="ms-3">Feb 2026</span>
               <h4 class="card-title">
-                <a href="">E-Commerce Website with API </a>
+                <a href="https://github.com/Aravinthkannan2002/profile_image_viewer" target="_blank">Profile Image Viewer — Flutter Package</a>
               </h4>
               <p class="text-muted">
-                Discover how to build a scalable e-commerce platform with seamless API for payments, products,
-                and user authentication.
+                A customizable, WhatsApp-style profile image viewer for Flutter with pinch-to-zoom, gallery support, theme presets, and more.
               </p>
               <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Read
                 More</a>
@@ -560,32 +602,31 @@
                   <img src="images/WHATSAPP 1.png" class="img-fluid" alt="WhatsApp Clone">
                 </div>
                 <div class="content mt-3">
-                  <small>By Aravinth</small><span class="text-muted ms-2">Jan 29, 2025</span>
-                  <h4 class="card-title mt-3">Creating a WhatsApp Clone in Flutter</h4>
+                  <small>By Aravinth</small><span class="text-muted ms-2">Mar 2025</span>
+                  <h4 class="card-title mt-3">WhatsApp Clone — Flutter & GetX</h4>
                   <div class="social-links mt-4">
                     <button href="" class="rounded-pill dribble">
-                      <a href="https://github.com/Aravinthkannan2002" target="_blank">
+                      <a href="https://github.com/Aravinthkannan2002/whatsapp_clone" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
                       </a>
                     </button>
                     <button href="" class="rounded-pill gmail">
-                      <a href="mailto:aravindkannan4614@gmail.com" target="_blank">
+                      <a href="mailto:aravindkannan4614@gmail.com" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-envelope-fill"></i>
                       </a>
                     </button>
                     <button href="" class="rounded-pill linkedin">
-                      <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank">
+                      <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-linkedin"></i>
                       </a>
                     </button>
                   </div>
-                  <p class="text-muted mt-3">In building the WhatsApp clone in Flutter, I focused on key features like
-                    real-time chat, media sharing, and a sleek, user-friendly design. I used Flutter widgets such as
-                    <code>ListView</code> for the chat list, <code>TextField</code> for the input area, and custom
-                    widgets for displaying images and videos. For the social share buttons, I integrated
-                    <code>IconButton</code> with customized actions, mimicking the WhatsApp interface. The challenge was
-                    ensuring smooth real-time messaging functionality and optimizing media loading for an optimal
-                    experience across devices.
+                  <p class="text-muted mt-3">Built a full-featured WhatsApp clone using Flutter and GetX for state
+                    management. Implemented real-time chat UI with <code>ListView</code> for conversations,
+                    <code>TextField</code> for message input, and custom widgets for media sharing. Focused on
+                    responsive design across Android & iOS, smooth navigation between chat screens, and
+                    optimized media loading. This project showcases my expertise in Flutter widget composition,
+                    GetX reactive state management, and building production-ready chat interfaces.
                   </p>
                 </div>
               </div>
@@ -626,31 +667,31 @@
                   <img src="images/CHATBOT 1.png" class="img-fluid" alt="Chatbot Image">
                 </div>
                 <div class="content mt-3">
-                  <small>By Aravinth</small><span class="text-muted ms-2 ms-md-0">January 29, 2025</span>
-                  <h4 class="card-title mt-3">Building an AI Chatbot with GetX and Gemini API</h4>
+                  <small>By Aravinth</small><span class="text-muted ms-2 ms-md-0">Jan 2026</span>
+                  <h4 class="card-title mt-3">Empty View — Flutter Package</h4>
                   <div class="social-links mt-4">
                     <button href="" class="rounded-pill dribble">
-                      <a href="https://github.com/Aravinthkannan2002" target="_blank">
+                      <a href="https://github.com/Aravinthkannan2002/empty_view" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
                       </a>
                     </button>
                     <button href="" class="rounded-pill gmail">
-                      <a href="mailto:aravindkannan4614@gmail.com" target="_blank">
+                      <a href="mailto:aravindkannan4614@gmail.com" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-envelope-fill"></i>
                       </a>
                     </button>
                     <button href="" class="rounded-pill linkedin">
-                      <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank">
+                      <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-linkedin"></i>
                       </a>
                     </button>
                   </div>
-                  <p class="text-muted mt-3">In this project, I developed a powerful AI chatbot using Flutter's state
-                    management tool GetX. The chatbot integrates with the Gemini API for advanced conversational
-                    capabilities. By leveraging GetX for state management, I was able to ensure smooth interactions and
-                    efficient data handling within the app. This chatbot is capable of understanding and responding to
-                    user inputs, creating personalized experiences for users. Explore the detailed approach and
-                    integration steps for building scalable and efficient AI chatbots in Flutter.</p>
+                  <p class="text-muted mt-3">Developed and published an open-source Flutter package for displaying
+                    beautiful empty state views. The package includes built-in animations, Lottie support, preset
+                    templates, shimmer loading effects, dark mode compatibility, and full accessibility features.
+                    Designed with Clean Architecture principles and focused on developer experience — offering a
+                    simple API with extensive customization options. This package demonstrates my ability to build
+                    reusable, production-quality Flutter components for the open-source community.</p>
                 </div>
               </div>
               <!-- <div class="heading px-2">
@@ -690,31 +731,30 @@
                   <img src="images/ECOMMERCE 1.png" class="img-fluid" alt="">
                 </div>
                 <div class="content mt-3">
-                  <small>By Aravinth</small><span class="text-muted ms-2 ms-md-0">January 29, 2025</span>
-                  <h4 class="card-title mt-3">Building My E-Commerce App with Flutter</h4>
+                  <small>By Aravinth</small><span class="text-muted ms-2 ms-md-0">Feb 2026</span>
+                  <h4 class="card-title mt-3">Profile Image Viewer — Flutter Package</h4>
                   <div class="social-links mt-4">
                     <button href="" class="rounded-pill dribble">
-                      <a href="https://github.com/Aravinthkannan2002" target="_blank">
+                      <a href="https://github.com/Aravinthkannan2002/profile_image_viewer" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-github"></i>
                       </a>
                     </button>
                     <button href="" class="rounded-pill gmail">
-                      <a href="mailto:aravindkannan4614@gmail.com" target="_blank">
+                      <a href="mailto:aravindkannan4614@gmail.com" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-envelope-fill"></i>
                       </a>
                     </button>
                     <button href="" class="rounded-pill linkedin">
-                      <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank">
+                      <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank" rel="noopener noreferrer">
                         <i class="bi bi-linkedin"></i>
                       </a>
                     </button>
                   </div>
-                  <p class="text-muted mt-3">In this project, I developed a fully functional e-commerce app using
-                    Flutter. The app offers a seamless shopping experience, allowing users to browse products, add them
-                    to the cart, and proceed to checkout. I focused on implementing smooth navigation, secure payment
-                    integration, and an easy-to-use interface. The app uses GetX for state management, ensuring
-                    efficient data handling and real-time updates across the app. The goal was to create a fast,
-                    intuitive platform that provides users with an engaging shopping experience.</p>
+                  <p class="text-muted mt-3">Built and published a customizable, WhatsApp-style profile image viewer
+                    package for Flutter. Features include pinch-to-zoom, swipeable gallery mode, multiple theme presets,
+                    and smooth hero animations. Designed to be drop-in ready for any Flutter app needing profile image
+                    viewing capabilities. Built with performance optimization in mind — lazy loading, gesture handling,
+                    and cross-platform support for both Android & iOS.</p>
                 </div>
               </div>
               <!-- <div class="heading px-2">
@@ -748,8 +788,8 @@
     <!-- contact section starts -->
     <section class="contact py-5" id="contact">
       <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
+        <small>Contact</small>
+        <h3>Let's Build Something Together</h3>
       </div>
       <div class="row justify-content-evenly mt-5">
         <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
@@ -758,7 +798,7 @@
               <i class="bi bi-geo-alt-fill"></i>
             </div>
             <div class="col-11">
-              <p>No. 45, Mount Road, Chennai - 600002, Tamil Nadu, India</p>
+              <p>Chennai, Tamil Nadu, India</p>
             </div>
           </div>
           <div class="row justify-content-evenly">
@@ -786,9 +826,25 @@
               <i class="bi bi-linkedin"></i>
             </div>
             <div class="col-11">
-              <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank" rel="noopener noreferrer">
-                <p>www.linkedin.com/in/arvindhkannan</p>
-              </a>
+              <p>
+                <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank" rel="noopener noreferrer"
+                  style="text-decoration: none; color: inherit;">
+                  linkedin.com/in/arvindhkannan
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-1">
+              <i class="bi bi-github"></i>
+            </div>
+            <div class="col-11">
+              <p>
+                <a href="https://github.com/Aravinthkannan2002" target="_blank" rel="noopener noreferrer"
+                  style="text-decoration: none; color: inherit;">
+                  github.com/Aravinthkannan2002
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -822,13 +878,54 @@
 
     <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
     <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
-      <i class="bi bi-arrow-up"></i>
+      <i class="bi bi-chevron-double-up"></i>
     </button>
+
+    <!-- AI Chatbot Widget -->
+    <button id="chatbot-toggle" title="Chat with AI about Aravinth" aria-label="Open AI chat assistant" aria-expanded="false" aria-controls="chatbot-box">
+      <i class="bi bi-chat-dots-fill"></i>
+      <span class="chatbot-badge">AI</span>
+    </button>
+    <div id="chatbot-box" role="dialog" aria-label="AI Chat Assistant">
+      <div id="chatbot-header">
+        <div class="chatbot-header-info">
+          <div class="chatbot-avatar">
+            <i class="bi bi-robot"></i>
+            <span class="online-dot"></span>
+          </div>
+          <div>
+            <h6>Aravinth's AI Assistant</h6>
+            <small><i class="bi bi-lightning-fill"></i> Powered by Google Gemini</small>
+          </div>
+        </div>
+        <div class="chatbot-header-actions">
+          <button id="chatbot-clear" title="Clear chat" aria-label="Clear chat"><i class="bi bi-arrow-counterclockwise"></i></button>
+          <button id="chatbot-close" title="Close" aria-label="Close chat"><i class="bi bi-x-lg"></i></button>
+        </div>
+      </div>
+      <div id="chatbot-messages" role="log" aria-live="polite" aria-label="Chat messages">
+        <div class="chat-msg bot-msg">
+          <div class="bot-icon"><i class="bi bi-robot"></i></div>
+          <div class="msg-bubble">Hi! I'm Aravinth's AI assistant powered by <strong>Google Gemini</strong>. Ask me anything about his skills, projects, experience, or how to contact him!</div>
+        </div>
+      </div>
+      <div id="chatbot-suggestions">
+        <button class="suggestion-chip" data-q="What are Aravinth's skills?"><i class="bi bi-code-slash"></i> Skills</button>
+        <button class="suggestion-chip" data-q="Show me Aravinth's projects"><i class="bi bi-folder"></i> Projects</button>
+        <button class="suggestion-chip" data-q="How can I contact Aravinth?"><i class="bi bi-envelope"></i> Contact</button>
+        <button class="suggestion-chip" data-q="Tell me about Aravinth's experience"><i class="bi bi-briefcase"></i> Experience</button>
+      </div>
+      <div id="chatbot-input-area">
+        <input type="text" id="chatbot-input" placeholder="Ask me about Aravinth..." autocomplete="off" maxlength="500" aria-label="Type your message" />
+        <button id="chatbot-send" aria-label="Send message"><i class="bi bi-send-fill"></i></button>
+      </div>
+    </div>
 
     <!-- footer section starts  -->
     <footer class="text-center text-muted py-4">
-      <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-      <div class="link-group mt-5" data-aos="fade-up">
+      <h3 class="text-white pt-4" data-aos="fade-up"><span class="brand-gradient">AK</span> Portfolio</h3>
+      <p class="footer-tagline mt-2" data-aos="fade-up">Building exceptional mobile experiences with Flutter</p>
+      <div class="link-group mt-4" data-aos="fade-up">
         <a href="#home">Home</a>
         <div class="vr"></div>
         <a href="#about">About</a>
@@ -842,25 +939,24 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="social-links mt-5" data-aos="fade-up">
-        <button href="" class="rounded-pill linkedin">
-          <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank">
+        <button class="rounded-pill linkedin">
+          <a href="https://www.linkedin.com/in/arvindhkannan" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-linkedin"></i>
           </a>
         </button>
-        <button href="" class="rounded-pill gmail">
-          <a href="mailto:aravindkannan4614@gmail.com" target="_blank">
+        <button class="rounded-pill gmail">
+          <a href="mailto:aravindkannan4614@gmail.com" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-envelope-fill"></i>
           </a>
         </button>
-        <button href="" class="rounded-pill github">
-          <a href="https://github.com/Aravinthkannan2002" target="_blank">
+        <button class="rounded-pill github">
+          <a href="https://github.com/Aravinthkannan2002" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-github"></i>
           </a>
         </button>
       </div>
       <hr class="text-muted my-4" />
-
-      <p>Copyright 2025 Aravinth's Portfolio | All Rights Reserved.</p>
+      <p>Copyright &copy; 2026 Aravinth Kannan. All Rights Reserved.</p>
     </footer>
     <!-- footer section ends here -->
 
