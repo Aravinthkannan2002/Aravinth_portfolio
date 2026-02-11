@@ -13,6 +13,10 @@ body{
     overflow-x: hidden;
     max-width: 100%;
     color: #333;
+    cursor: none;
+}
+body a, body button, body input, body textarea, body select{
+    cursor: none;
 }
 :root{
     overflow-x: hidden;
@@ -1110,6 +1114,51 @@ section{
     z-index: 10;
 }
 
+/* ========== Custom Cursor Animation ========== */
+.cursor-dot{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: width 0.15s, height 0.15s, opacity 0.15s;
+}
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 99998;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, border-color 0.3s, background 0.3s;
+    opacity: 0.6;
+}
+.cursor-dot.cursor-hover{
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, var(--accent), #f59e0b);
+}
+.cursor-outline.cursor-hover{
+    width: 50px;
+    height: 50px;
+    border-color: var(--accent);
+    background: rgba(252, 166, 31, 0.08);
+    opacity: 0.8;
+}
+.cursor-dot.cursor-hidden,
+.cursor-outline.cursor-hidden{
+    opacity: 0;
+}
+
 /* ========== Responsive Design ========== */
 
 /* --- Tablet (max-width: 991px) --- */
@@ -1188,6 +1237,14 @@ section{
 
 /* --- Mobile (max-width: 768px) --- */
 @media (max-width: 768px) {
+    /* Restore default cursor on mobile */
+    body, body a, body button, body input, body textarea, body select{
+        cursor: auto;
+    }
+    .cursor-dot, .cursor-outline{
+        display: none !important;
+    }
+
     .home h2{
         font-size: 2rem;
         line-height: 2.8rem;

@@ -1,3 +1,63 @@
+// ========== Custom Cursor Animation ==========
+(function() {
+  var dot = document.querySelector('.cursor-dot');
+  var outline = document.querySelector('.cursor-outline');
+  if (!dot || !outline) return;
+
+  // Hide on touch devices
+  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+    dot.style.display = 'none';
+    outline.style.display = 'none';
+    document.body.style.cursor = 'auto';
+    return;
+  }
+
+  var mouseX = -100, mouseY = -100;
+  var outlineX = -100, outlineY = -100;
+
+  // Instant dot position
+  document.addEventListener('mousemove', function(e) {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    dot.style.left = mouseX + 'px';
+    dot.style.top = mouseY + 'px';
+  });
+
+  // Smooth trailing outline
+  function animateOutline() {
+    outlineX += (mouseX - outlineX) * 0.15;
+    outlineY += (mouseY - outlineY) * 0.15;
+    outline.style.left = outlineX + 'px';
+    outline.style.top = outlineY + 'px';
+    requestAnimationFrame(animateOutline);
+  }
+  animateOutline();
+
+  // Hover effect on interactive elements
+  var hoverTargets = document.querySelectorAll('a, button, .filter-item, .suggestion-chip, .service-card, .card, .social-links button, input, textarea');
+  hoverTargets.forEach(function(el) {
+    el.addEventListener('mouseenter', function() {
+      dot.classList.add('cursor-hover');
+      outline.classList.add('cursor-hover');
+    });
+    el.addEventListener('mouseleave', function() {
+      dot.classList.remove('cursor-hover');
+      outline.classList.remove('cursor-hover');
+    });
+  });
+
+  // Hide cursor when leaving window
+  document.addEventListener('mouseleave', function() {
+    dot.classList.add('cursor-hidden');
+    outline.classList.add('cursor-hidden');
+  });
+  document.addEventListener('mouseenter', function() {
+    dot.classList.remove('cursor-hidden');
+    outline.classList.remove('cursor-hidden');
+  });
+})();
+
+
 // ========== Typing Animation ==========
 (function() {
   const texts = [
