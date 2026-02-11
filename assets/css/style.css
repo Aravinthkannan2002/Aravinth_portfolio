@@ -833,6 +833,34 @@ section{
 
 /* ========== Responsive Design ========== */
 
+/* ========== Offline Toast ========== */
+.offline-toast{
+    position: fixed;
+    top: -80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #1e1e2e, #2a2a3e);
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    z-index: 99999;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.05);
+    transition: top 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+    white-space: nowrap;
+}
+.offline-toast.show{
+    top: 24px;
+}
+.offline-toast i{
+    font-size: 1.2rem;
+    color: #ff6b6b;
+}
+
 /* --- Tablet (max-width: 991px) --- */
 @media (max-width: 991px) {
     /* Navbar mobile menu */
@@ -909,6 +937,15 @@ section{
 
 /* --- Mobile (max-width: 768px) --- */
 @media (max-width: 768px) {
+    /* Offline toast mobile */
+    .offline-toast{
+        font-size: 0.85rem;
+        padding: 12px 20px;
+        max-width: 90vw;
+        white-space: normal;
+        text-align: center;
+    }
+
     /* Restore default cursor on mobile */
     body, body a, body button, body input, body textarea, body select{
         cursor: auto;

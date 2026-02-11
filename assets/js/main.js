@@ -286,6 +286,25 @@ document.addEventListener("DOMContentLoaded", function () {
 })();
 
 
+// ========== Offline Detection Toast ==========
+(function() {
+  var toast = document.getElementById('offline-toast');
+  if (!toast) return;
+
+  function updateStatus() {
+    if (!navigator.onLine) {
+      toast.classList.add('show');
+    } else {
+      toast.classList.remove('show');
+    }
+  }
+
+  window.addEventListener('offline', updateStatus);
+  window.addEventListener('online', updateStatus);
+  updateStatus();
+})();
+
+
 // ========== Email Sending (EmailJS) ==========
 emailjs.init("ZyBdq3JrAeYe_-chO");
 

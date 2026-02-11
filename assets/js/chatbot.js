@@ -264,6 +264,12 @@ RULES:
     if (!text || isProcessing) return;
     if (text.length > MAX_MSG_LENGTH) text = text.substring(0, MAX_MSG_LENGTH);
 
+    if (!navigator.onLine) {
+      input.value = '';
+      addMessage("<i class='bi bi-wifi-off' style='font-size:1.1rem;margin-right:4px;'></i> You're offline. Please check your internet connection and try again.", 'error');
+      return;
+    }
+
     const quota = checkQuota();
     if (!quota.allowed) {
       input.value = '';
