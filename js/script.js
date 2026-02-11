@@ -366,7 +366,7 @@ PUBLISHED FLUTTER PACKAGES (Open Source):
 
 TESTIMONIALS:
 - Ragu Pathi (CEO, Roriri Software Solutions): "Aravinth grew from an intern to one of our core developers in record time. He independently shipped production apps on both Play Store and App Store, handling everything from Clean Architecture to complex API integrations. A truly self-driven developer."
-- Gayathri Jayakumar (Senior Backend Developer, TalentTurbo Technologies Pvt. Ltd.): "Working with Aravinth on TalentTurbo was a great experience. He seamlessly integrated 20+ backend APIs with token-based auth, built Firebase Dynamic Links for our referral system, and implemented push notifications flawlessly."
+- Gayathri Jaikumaran (Senior Backend Developer, TalentTurbo Technologies Pvt. Ltd.): "Working with Aravinth on TalentTurbo was a great experience. He seamlessly integrated 20+ backend APIs with token-based auth, built Firebase Dynamic Links for our referral system, and implemented push notifications flawlessly."
 - Boopathy Ranjith (Senior Flutter Developer, Amshuhu Itech Solution Private Limited): "Aravinth has a strong grasp of Flutter and cross-platform development. He built responsive UIs, connected mobile clients to RESTful backends, and contributed to apps that reached 50,000+ downloads."
 - Raj Krishna (Trainer, Greens Technologys): "Aravinth was one of the most dedicated trainees in our Flutter program. He quickly mastered widgets, layouts, navigation, state management, and REST API integration within the 3-month training."
 
